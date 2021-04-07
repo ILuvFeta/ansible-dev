@@ -12,7 +12,6 @@
       win_updates:
         category_names: ['SecurityUpdates','CriticalUpdates','UpdateRollups', 'Updates', 'DefinitionUpdates', 'Upgrades','Feature Packs']
         log_path: C:\ansible_wu.txt
-        state: downloaded
       register: result
       
 
