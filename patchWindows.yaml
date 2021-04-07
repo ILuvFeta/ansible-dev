@@ -11,8 +11,9 @@
     - name: Running Windows Update
       win_updates:
         category_names: ['SecurityUpdates','CriticalUpdates','UpdateRollups', 'Updates', 'DefinitionUpdates']
+        log_path: C:\ansible_wu.txt
       register: result
-      log_path: C:\ansible_wu.txt
+      
 
     # output results
     - debug: var=result
